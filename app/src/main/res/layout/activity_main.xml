@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editext"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:background="@drawable/customedit"
+                android:paddingStart="25dp"
+                android:hint="Name"
+                android:textColorHint="@color/grey"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:drawableStart="@drawable/baseline_search_24"
+                android:drawablePadding="5dp"
+                android:layout_marginStart="15sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10sp"
+                android:text="Search" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contacts_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit1"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="195dp"
+            android:layout_marginBottom="150dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/undraw_online_re_x00h" />
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="250sp"
+            android:layout_height="45dp"
+            android:background="@drawable/customedit"
+            android:paddingStart="25dp"
+            android:hint="PhoneNumber"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/baseline_contact_phone_24"
+            android:drawablePadding="5dp"
+            android:layout_marginStart="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/edit2"/>
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:background="@drawable/customedit"
+            android:layout_alignParentBottom="true"
+            android:hint="Message"
+            android:drawableStart="@drawable/baseline_message_24"
+            android:drawablePadding="5dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:paddingStart="25dp"
+            android:layout_marginBottom="50dp"/>
+
+
+        <ImageView
+            android:id="@+id/imagebutton"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_send_24"
+            android:layout_toRightOf="@+id/edit2"
+            android:layout_below="@id/edit1"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="50dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
